@@ -1,10 +1,16 @@
-html, body {
-  font-family: 'Open Sans', sans-serif;
-  color:  #423D3F;;
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #423d3f;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #0B3757;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0b3757;
 }
 
 h1 {
@@ -25,10 +31,12 @@ p {
 }
 
 a {
-  color: #9ACFF6;
+  color: #fcff82;
   text-decoration: underline;
 
-  &:hover, &:active, &:focus {
-    color: darken(#9ACFF6, 15%);
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fcff82;
   }
 }
