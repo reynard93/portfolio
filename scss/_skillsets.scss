@@ -1,15 +1,118 @@
+* {
+  list-style: none;
+  padding: 0;
+}
+
 .skillsets {
-  .skillset {
+
+  li {
     margin-top: 20px;
     margin-bottom: 10px;
-
-    .skillset-heading {
-      text-transform: uppercase;
-      color: #797979;
-      letter-spacing: 1.6px;
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 5px;
+  }
+  h3 {
+    text-transform: uppercase;
+    color: #797979;
+    letter-spacing: 1.6px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .bar {
+    background: #eaecf0;
+    display: block;
+    height: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+    span {
+      height: 5px;
+      float: left;
+      background: linear-gradient(151.88deg, #E8E030 -21.04%, #E95151 51.4%, #EF5220 147.44%);
     }
   }
+  .html {
+    width: 40%;
+    animation:html 2s;
+  }
+
+  .js {
+    width: 60%;
+    animation:js 2.25s;
+  }
+
+  .css {
+    width: 40%;
+    animation:css 2.5s;
+  }
+
+  .sql {
+    width: 35%;
+    animation:sql 2.75s;
+  }
+
+  .py {
+    width: 50%;
+    animation:py 3s;
+  }
+
+  @keyframes html{
+    0%{
+      width:0%;
+    }
+    100%{
+      width:40%;
+    }
+  }
+  @keyframes js{
+    0%{
+      width:0%;
+    }
+    100%{
+      width:60%;
+    }
+  }
+  @keyframes css{
+    0%{
+      width:0%;
+    }
+    100%{
+      width:40%;
+    }
+  }
+  @keyframes sql{
+    0%{
+      width:0%;
+    }
+    100%{
+      width:35%;
+    }
+  }
+  @keyframes py{
+    0%{
+      width:0%;
+    }
+    100%{
+      width:50%;
+    }
+  }
+
+
 }
+
+
+// .skillsets {
+//   .skillset {
+//     margin-top: 20px;
+//     margin-bottom: 10px;
+
+//     .skillset-heading {
+//       text-transform: uppercase;
+//       color: #797979;
+//       letter-spacing: 1.6px;
+//       font-size: 16px;
+//       font-weight: 700;
+//       margin-bottom: 5px;
+//     }
+//   }
+// }

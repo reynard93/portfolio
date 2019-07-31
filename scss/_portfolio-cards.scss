@@ -8,6 +8,7 @@
     border-radius: 6px;
     margin-bottom: 30px;
     overflow: hidden;
+    cursor: pointer;
 
     .portfolio-card-image {
       background-size: cover;
@@ -29,12 +30,40 @@
 
       .portfolio-card-credits {
         display: block;
-        color: #A7A7A7;
+        color: #a7a7a7;
         font-size: 14px;
         text-transform: uppercase;
         letter-spacing: 1px;
         font-weight: 600;
       }
     }
+  }
+}
+
+.loader {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 306px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &.hidden {
+    animation: fadeOut 0.75s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
