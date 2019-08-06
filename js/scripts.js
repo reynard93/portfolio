@@ -38,7 +38,7 @@ $(document).ready(function() {
       const slideInAt = window.scrollY + window.innerHeight;
       var isShown;
       if (is_mobile == true) {
-        isShown = slideInAt > portContainer.offsetTop - portImage.height * 8;
+        isShown = slideInAt > portContainer.offsetTop - portImage.height * 10;
         console.log(portContainer.offsetTop - portImage.height * 8);
       } else {
         isShown = slideInAt > portContainer.offsetTop + portImage.height ;
