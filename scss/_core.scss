@@ -1,8 +1,13 @@
+*{
+  box-sizing: border-box;
+}
+
 html,
 body {
   background: #b3d7ff;
   font-family: "Open Sans", sans-serif;
   color: #423d3f;
+  overflow-x: hidden;
 }
 
 h1,
@@ -11,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #0b3757;
+  color: #061444;
 }
 
 h1 {
