@@ -1,3 +1,7 @@
+$(window).on('load',() => {
+  $(".preload").addClass("preload-finish");
+})
+
 $(document).ready(function() {
   $("#portfolio-button").click(function() {
     $("html, body").animate(
@@ -41,7 +45,7 @@ $(document).ready(function() {
         isShown = slideInAt > portContainer.offsetTop - portImage.height * 10;
         console.log(portContainer.offsetTop - portImage.height * 8);
       } else {
-        isShown = slideInAt > portContainer.offsetTop + portImage.height ;
+        isShown = slideInAt > portContainer.offsetTop + portImage.height;
       }
       if (isShown) {
         $(".loader").addClass("hidden");
@@ -55,4 +59,5 @@ $(document).ready(function() {
     const url = $(this).data("url");
     window.open(url, "portfolioPage");
   });
+
 });

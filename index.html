@@ -18,11 +18,16 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   <body>
-
-    <header class="v-header">
+    <div class="preload">
+      <img class="jugg" src="/img/loading.gif" alt="spin">
+      <h3>Waiting for the website...</h3>
+      <img class="cloud1" src="/img/cloud.png" alt="c1">
+      <img class="cloud2" src="/img/cloud.png" alt="c2">
+      <img class="cloud3" src="/img/cloud.png" alt="c3">
+    </div>
+    <header class="v-header"></header>
       <div class="fullscreen-video-wrap">
-        <video autoplay="autoplay" loop="loop" muted="muted">
-          <source src="lantern.mp4" type="video/mp4">
+        <video class="videoInsert" preload="none" src="lantern.mp4" height="100%" width="100%" autoplay="autoplay" objectFit="cover" loop="loop" muted="muted">
         </video>
       </div>
       <div class="header-overlay">
@@ -98,10 +103,8 @@
             <button id="portfolio-button" class="mt-3 btn btn-primary">Check out my portfolio</button>
       </div>
     </header>
-
     
     <!-- past hero section -->
-
     <section id="portfolio-section"  class="content-section content-section-centered">
       <div class="container">
         <div>
@@ -112,9 +115,6 @@
           
           <div class="row portfolio-cards">
             <div class="col-sm-4">
-              <div class="loader">
-                <img src="img/loading.gif" alt="Loading...">
-              </div>
               <div data-url="https://reynardlee.me/petappreact" class="portfolio-card">
                 <div class="portfolio-card-image" style="background-image: url('img/petapp.jpg')"></div>
                 <div class="portfolio-card-information">
@@ -124,9 +124,6 @@
               </div>
             </div>
             <div class="col-sm-4">
-                <div class="loader">
-                    <img src="img/loading.gif" alt="Loading...">
-                  </div>
               <div data-url="http://reynardlee.me/burgerappprac/" class="portfolio-card">
                   <div class="portfolio-card-image" style="background-image: url('img/burger.jpg')"></div>
                 <div class="portfolio-card-information">
@@ -136,9 +133,6 @@
               </div>
             </div>
             <div class="col-sm-4">
-                <div class="loader">
-                    <img src="img/loading.gif" alt="Loading...">
-                  </div>
               <div data-url="https://the-room-v1-chat.herokuapp.com/" class="portfolio-card">
                 <div class="portfolio-card-image" style="background-image: url('img/theroom.jpg')"></div>
                 <div class="portfolio-card-information">
@@ -151,9 +145,6 @@
 
           <div class="row portfolio-cards">
               <div class="col-sm-4">
-                <div class="loader">
-                  <img src="img/loading.gif" alt="Loading...">
-                </div>
                 <div data-url="http://reycocktail.netlify.com/" class="portfolio-card">
                   <div class="portfolio-card-image" style="background-image: url('img/cocktail.jpg')"></div>
                   <div class="portfolio-card-information">
@@ -163,9 +154,6 @@
                 </div>
               </div>
               <div class="col-sm-4">
-                  <div class="loader">
-                      <img src="img/loading.gif" alt="Loading...">
-                    </div>
                 <div data-url="http://reynardlee.me/calculator/" class="portfolio-card">
                     <div class="portfolio-card-image" style="background-image: url('img/calc.jpg')"></div>
                   <div class="portfolio-card-information">
@@ -175,9 +163,6 @@
                 </div>
               </div>
               <div class="col-sm-4">
-                  <div class="loader">
-                      <img src="img/loading.gif" alt="Loading...">
-                    </div>
                 <div data-url="https://breakoutrey.netlify.com/" class="portfolio-card">
                   <div class="portfolio-card-image" style="background-image: url('img/breakout.jpg')"></div>
                   <div class="portfolio-card-information">
@@ -191,9 +176,6 @@
 
             <div class="row portfolio-cards">
                 <div class="col-sm-4">
-                  <div class="loader">
-                    <img src="img/loading.gif" alt="Loading...">
-                  </div>
                   <div data-url="https://todo-apprey.netlify.com/" class="portfolio-card">
                     <div class="portfolio-card-image" style="background-image: url('img/todo.jpg')"></div>
                     <div class="portfolio-card-information">
@@ -203,9 +185,6 @@
                   </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="loader">
-                        <img src="img/loading.gif" alt="Loading...">
-                      </div>
                   <div data-url="https://signuprey.netlify.com/" class="portfolio-card">
                       <div class="portfolio-card-image" style="background-image: url('img/signup.jpg')"></div>
                     <div class="portfolio-card-information">
@@ -215,9 +194,6 @@
                   </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="loader">
-                        <img src="img/loading.gif" alt="Loading...">
-                      </div>
                   <div data-url="https://notesapprey.netlify.com/" class="portfolio-card">
                     <div class="portfolio-card-image" style="background-image: url('img/note.jpg')"></div>
                     <div class="portfolio-card-information">
@@ -243,9 +219,8 @@
                  <img class="img-circle mb-2" src="img/profile-picture.jpg" alt="Reynard Lee" width="60" height="60"><br>
                  Who am I?
                </h2>
-               <p>I am a self-taught programmer and lousy gamer (not taught).</p>
+               <p>I am a self-taught programmer.</p>
                <p>I enjoy reading books, drinking coffee and watching Anime / Kamen Rider. </p>
-               <p>Also love picking fights with people stronger than me.</p>
                <p>To see my range of skills, <a href="#" data-toggle="modal" data-target="#skills-modal">click here.</a></p>
              </div>
            </div>
@@ -322,7 +297,7 @@
         </div>
       </div>
     </div>
-
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

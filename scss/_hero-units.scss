@@ -1,4 +1,3 @@
-
 path {
   stroke: #fff;
   fill: #fff;
@@ -33,34 +32,35 @@ path {
 
 .v-header {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
 }
 
 .fullscreen-video-wrap {
+  text-align: center;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
 }
 
-.fullscreen-video-wrap video {
+video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: fill;
 }
 
 .header-overlay {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   background: #225470;
   z-index: 1;
-  opacity: 0.55;
+  opacity: 0.45;
 }
 
 #header-content {
@@ -72,26 +72,5 @@ path {
   opacity: 1;
 }
 
-// @media (max-width: 960px) {
-//   .containerv {
-//     padding-right: 3rem;
-//     padding-left: 3rem;
-//   }
-// }
 
-// @media only screen and (max-width: 576px) {
-//   .hero-unit {
-//     text-align: center;
-//     background: url("../img/hero-unit-background-mobile.jpg");
-//     background-size: cover;
-//     background-position: center;
-
-//     .hero-unit-heading {
-//       font-size: 40px;
-//     }
-//     .hero-unit-subheading {
-//       font-size: 14px;
-//     }
-//   }
-// }
 
