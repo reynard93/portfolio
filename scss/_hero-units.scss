@@ -64,13 +64,44 @@ video {
 }
 
 #header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   opacity: 1;
+
+  h3, h5 {
+    color: white;
+  }
+
+  .wrapperlogo {
+    width: 100%;
+    height: 30%;
+  }
 }
 
+@media only screen and (max-width: 576px) {
+  #header-content {
+    text-align: center;
+    background: url("../img/hero-unit-background-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .hero-subsubh {
+      font-size: 14px;
+    }
+    .hero-unit-subheading {
+      font-size: 16px;
+    }
+    #portfolio-button {
+      font-size: 16px;
+    }
+  }
+}
 
 
